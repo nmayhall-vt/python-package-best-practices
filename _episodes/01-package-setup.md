@@ -8,10 +8,10 @@ questions:
 - "What license should I choose for my project?"
 objectives:
 - "Explain Python package structure."
-- "Use the CMS CookieCutter to build a Python package."
+- "Use the QIS CookieCutter to build a Python package."
 keypoints:
 - "There is a common way to structure Python packages"
-- "You can use the CMS CookieCutter to quickly create the layout for a Python package"
+- "You can use the QIS CookieCutter to quickly create the layout for a Python package"
 ---
 
 For this workshop,
@@ -33,8 +33,9 @@ If you look at the GitHub repositories for several large Python packages such as
 Having a similar way to lay out Python packages allows people to more easily understand and contribute to your code.
 
 ## Creating a Python package using CookieCutter
-To create a skeletal structure for our project, we will use the MolSSI Computational Molecular Science (CMS) CookieCutter.
+To create a skeletal structure for our project, we will use a QIS focused fork of the MolSSI Computational Molecular Science (CMS) CookieCutter.
 The [CMS CookieCutter] is a special cookiecutter created specifically by MolSSI to use the tools and services we recommend in developing a Python project.
+Our modified version simply uses example data that is more relevant to QIS applications. 
 
 CookieCutter will not only create our directory layout, but will also set up many tools we will use including testing, continuous integration, documentation, and version control using git.
 We will discuss what all of these are later in the workshop.
@@ -47,10 +48,10 @@ If you do not, please navigate to [setup] and follow the instructions given ther
 ### Running CookieCutter
 Navigate to the `molssi_best_practices` directory created during [setup].
 (CookieCutter will generate the new project in a subdirectory.)
-Run the [CMS CookieCutter] to start your project:
+Run the [QIS CookieCutter] to start your project:
 
 ~~~
-$ cookiecutter gh:molssi/cookiecutter-cms
+$ cookiecutter gh:nmayhall-vt/cookiecutter-qis
 ~~~
 {: .language-bash}
 
